@@ -14,10 +14,10 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: process.env.email,
-        pass: process.env.passwoard
+        pass: process.env.password,
     }
 
-});
+});d
 
 
 let {
