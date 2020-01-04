@@ -4,7 +4,6 @@ const app = express()
 const uuidv1 = require("uuid/v1")
 const nodemailer = require('nodemailer');
 const cors = require("cors")
-
 const bodyParser = require("body-parser")
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
@@ -101,6 +100,11 @@ app.post("/info",(req,res)=>{
          })
     })
 
+})
+app.use((req,resp)=>{
+    resp.json({
+        body:"i am working"
+    })
 })
 
 
